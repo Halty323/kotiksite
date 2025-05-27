@@ -1,0 +1,25 @@
+// src/components/Timeline.jsx
+const events = [
+  { date: 'Когда я признался тебе', desc: 'Самый лучший день в жизни, я помню твое лицо и тот закат, момент был интересный, но все же я помню все в деталях, я люблю тебя котик' },
+  { date: 'Первая годовщина', desc: 'Помнишь того хомячка которого я слепил для тебя? Сто процентов что нибудь еще слепленное у тебя будет)) Мне нравится делать что то для тебя, готовить, дарить подарки, я так люблю делать тебя счастливой, прости если иногда я говорю глупости' },
+  { date: 'Поездка в питер', desc: 'Как бы я сильно хотел чтобы это было не на одну неделю, и как же я хочу чтобы мы снова просыпались вместе в одной кровати и всегда были рядом. Котенок мой, так и будет, рано или поздно, я очень очень сильно скучаю по тебе моя дорогая. Ты самая лучшая и самая замечательная, никогда не сдавайся' },
+];
+
+export default function Timeline() {
+  return (
+    <div className="my-10">
+      <h2 className="text-2xl font-semibold text-center text-pink-500 mb-4">Жесть сколько всего было</h2>
+      <ul className="space-y-4">
+        {events.map((event, i) => (
+          <li
+            key={i}
+            className="bg-white p-4 rounded-lg shadow-md hover:glow transition-shadow duration-300 timeline-item"
+          >
+            <p className="font-semibold text-pink-600">{event.date}</p>
+            <p className="text-gray-600">{event.desc}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
