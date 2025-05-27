@@ -20,7 +20,7 @@ export default function Surprise() {
           className="mt-6"
         >
           <img
-            src="/assets/kitty.jpg"
+            src="/kotiksite/assets/kitty.jpg"
             alt="Kitty photo"
             className="rounded-lg shadow-2xl mx-auto"
             style={{ maxWidth: '600px', width: '100%' }}
